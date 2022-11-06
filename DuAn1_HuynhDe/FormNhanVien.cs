@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DuAn1_HuynhDe
 {
-    public partial class Form1 : Form
+    public partial class FormNhanVien : Form
     {
-        public Form1()
+        public FormNhanVien()
         {
             InitializeComponent();
         }
