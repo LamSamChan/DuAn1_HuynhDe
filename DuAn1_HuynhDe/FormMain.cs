@@ -5,6 +5,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +20,33 @@ namespace DuAn1_HuynhDe
         public FormMain()
         {
             InitializeComponent();
+            //resize window
+            //this.SetStyle(ControlStyles.ResizeRedraw,true);
         }
+        //resize window
+        /*private const int cGrip = 16;
+        private const int cCaption = 32;*/
+
+        /*protected override void WndProc(ref Message m)
+        {
+            if (m.Msg ==0x84)
+            {
+                Point pos = new Point(m.LParam.ToInt32());
+                pos = this.PointToClient(pos);
+
+                if (pos.Y < cCaption)
+                {
+                    m.Result = (IntPtr)2;
+                    return;
+                }
+                if (pos.X >= this.ClientSize.Width - cGrip && pos.Y >= this.ClientSize.Height - cGrip)
+                {
+                    m.Result = (IntPtr)17;
+                    return;
+                }
+            }
+            base.WndProc(ref m); 
+        }*/
 
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -138,12 +166,17 @@ namespace DuAn1_HuynhDe
 
         private void btnMaxSize_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
+            if (btnMaxSize.Text.ToString() == "❐")
             {
-                this.WindowState = FormWindowState.Maximized;
+                this.WindowState = FormWindowState.Normal;
+                this.CenterToScreen();
+                btnMaxSize.Text = "☐";
             }
             else
-                this.WindowState = FormWindowState.Normal;
+            {
+                WindowState = FormWindowState.Maximized;
+                btnMaxSize.Text = "❐";
+            }
         }
 
         private void BtnMinSize_Click(object sender, EventArgs e)
@@ -166,6 +199,27 @@ namespace DuAn1_HuynhDe
             IconHomeMain.IconColor = Color.PowderBlue;
         }
 
-       
+        //move window
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+
+                if (this.WindowState == FormWindowState.Normal)
+                {
+                    btnMaxSize.Text = "☐";
+                }
+            }
+        }
     }
 }
