@@ -45,7 +45,6 @@
             this.BtnMinSize = new FontAwesome.Sharp.IconButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.PanelShaDow = new System.Windows.Forms.Panel();
-            this.panelDeskTop = new System.Windows.Forms.Panel();
             this.PannelMainMenu.SuspendLayout();
             this.PanelMainLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_Home)).BeginInit();
@@ -331,21 +330,10 @@
             this.PanelShaDow.Size = new System.Drawing.Size(1141, 12);
             this.PanelShaDow.TabIndex = 2;
             // 
-            // panelDeskTop
-            // 
-            this.panelDeskTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
-            this.panelDeskTop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDeskTop.Location = new System.Drawing.Point(360, 98);
-            this.panelDeskTop.Margin = new System.Windows.Forms.Padding(4);
-            this.panelDeskTop.Name = "panelDeskTop";
-            this.panelDeskTop.Size = new System.Drawing.Size(1141, 592);
-            this.panelDeskTop.TabIndex = 3;
-            // 
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1501, 690);
-            this.Controls.Add(this.panelDeskTop);
             this.Controls.Add(this.PanelShaDow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.PannelMainMenu);
@@ -381,7 +369,6 @@
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton IconHomeMain;
         private System.Windows.Forms.Panel PanelShaDow;
-        private System.Windows.Forms.Panel panelDeskTop;
     }
 }
 

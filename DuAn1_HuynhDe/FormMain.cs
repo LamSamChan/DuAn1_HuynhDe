@@ -21,15 +21,15 @@ namespace DuAn1_HuynhDe
         {
             InitializeComponent();
             //resize window
-            //this.SetStyle(ControlStyles.ResizeRedraw,true);
+            this.SetStyle(ControlStyles.ResizeRedraw,true);
         }
         //resize window
-        /*private const int cGrip = 16;
-        private const int cCaption = 32;*/
+        private const int cGrip = 16;
+        private const int cCaption = 32;
 
-        /*protected override void WndProc(ref Message m)
+        protected override void WndProc(ref Message m)
         {
-            if (m.Msg ==0x84)
+            if (m.Msg == 0x84)
             {
                 Point pos = new Point(m.LParam.ToInt32());
                 pos = this.PointToClient(pos);
@@ -45,8 +45,8 @@ namespace DuAn1_HuynhDe
                     return;
                 }
             }
-            base.WndProc(ref m); 
-        }*/
+            base.WndProc(ref m);
+        }
 
         private IconButton currentBtn;
         private Panel leftBorderBtn;
@@ -126,8 +126,8 @@ namespace DuAn1_HuynhDe
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelDeskTop.Controls.Add(childForm);
-            panelDeskTop.Tag = childForm;
+            /*panelDeskTop.Controls.Add(childForm);
+            panelDeskTop.Tag = childForm;*/
             childForm.BringToFront();
             childForm.Show();
             label1.Text = childForm.Text;
