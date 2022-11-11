@@ -47,7 +47,7 @@ namespace DuAn1_HuynhDe
             }
             base.WndProc(ref m); 
         }*/
-
+        // thao
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form ChildFormCurrent;
