@@ -54,7 +54,7 @@
             // 
             // PannelMainMenu
             // 
-            this.PannelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(59)))), ((int)(((byte)(70)))));
+            this.PannelMainMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(98)))), ((int)(((byte)(236)))));
             this.PannelMainMenu.Controls.Add(this.iconButton5);
             this.PannelMainMenu.Controls.Add(this.iconButton4);
             this.PannelMainMenu.Controls.Add(this.iconButton2);
@@ -69,7 +69,7 @@
             // 
             // iconButton5
             // 
-            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(59)))), ((int)(((byte)(70)))));
+            this.iconButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(98)))), ((int)(((byte)(236)))));
             this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton5.FlatAppearance.BorderSize = 0;
             this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -94,7 +94,7 @@
             // 
             // iconButton4
             // 
-            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(59)))), ((int)(((byte)(70)))));
+            this.iconButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(98)))), ((int)(((byte)(236)))));
             this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton4.FlatAppearance.BorderSize = 0;
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -119,7 +119,7 @@
             // 
             // iconButton2
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(59)))), ((int)(((byte)(70)))));
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(98)))), ((int)(((byte)(236)))));
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -144,7 +144,7 @@
             // 
             // iconButton1
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(59)))), ((int)(((byte)(70)))));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(98)))), ((int)(((byte)(236)))));
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -169,6 +169,7 @@
             // 
             // PanelMainLogo
             // 
+            this.PanelMainLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.PanelMainLogo.Controls.Add(this.bt_Home);
             this.PanelMainLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelMainLogo.Location = new System.Drawing.Point(0, 0);
@@ -179,7 +180,8 @@
             // 
             // bt_Home
             // 
-            this.bt_Home.Location = new System.Drawing.Point(91, 44);
+            this.bt_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
+            this.bt_Home.Location = new System.Drawing.Point(95, 59);
             this.bt_Home.Margin = new System.Windows.Forms.Padding(4);
             this.bt_Home.Name = "bt_Home";
             this.bt_Home.Size = new System.Drawing.Size(144, 107);
@@ -190,7 +192,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.IconHomeMain);
             this.panel1.Controls.Add(this.textBox1);
@@ -210,28 +212,28 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(65, 50);
+            this.label1.Location = new System.Drawing.Point(62, 44);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
+            this.label1.Size = new System.Drawing.Size(56, 19);
             this.label1.TabIndex = 5;
             this.label1.Text = "Home";
             // 
             // IconHomeMain
             // 
-            this.IconHomeMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.IconHomeMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.IconHomeMain.FlatAppearance.BorderSize = 0;
             this.IconHomeMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IconHomeMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IconHomeMain.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.IconHomeMain.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
-            this.IconHomeMain.IconColor = System.Drawing.Color.PowderBlue;
+            this.IconHomeMain.IconColor = System.Drawing.Color.Black;
             this.IconHomeMain.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IconHomeMain.IconSize = 35;
-            this.IconHomeMain.Location = new System.Drawing.Point(4, 44);
+            this.IconHomeMain.Location = new System.Drawing.Point(4, 24);
             this.IconHomeMain.Margin = new System.Windows.Forms.Padding(4);
             this.IconHomeMain.Name = "IconHomeMain";
-            this.IconHomeMain.Size = new System.Drawing.Size(53, 38);
+            this.IconHomeMain.Size = new System.Drawing.Size(71, 58);
             this.IconHomeMain.TabIndex = 4;
             this.IconHomeMain.UseVisualStyleBackColor = false;
             // 
@@ -240,14 +242,14 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Segoe Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.Transparent;
             this.textBox1.Location = new System.Drawing.Point(463, 24);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 49);
+            this.textBox1.Size = new System.Drawing.Size(232, 39);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "HUYNHDE";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -255,12 +257,12 @@
             // btnExits
             // 
             this.btnExits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.btnExits.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.btnExits.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExits.FlatAppearance.BorderSize = 0;
             this.btnExits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExits.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExits.ForeColor = System.Drawing.Color.Transparent;
             this.btnExits.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnExits.IconColor = System.Drawing.Color.Black;
             this.btnExits.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -276,16 +278,16 @@
             // btnMaxSize
             // 
             this.btnMaxSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaxSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.btnMaxSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.btnMaxSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaxSize.FlatAppearance.BorderSize = 0;
             this.btnMaxSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaxSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMaxSize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMaxSize.ForeColor = System.Drawing.Color.Transparent;
             this.btnMaxSize.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnMaxSize.IconColor = System.Drawing.Color.Black;
             this.btnMaxSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMaxSize.Location = new System.Drawing.Point(1039, 0);
+            this.btnMaxSize.Location = new System.Drawing.Point(1038, 2);
             this.btnMaxSize.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaxSize.Name = "btnMaxSize";
             this.btnMaxSize.Size = new System.Drawing.Size(53, 31);
@@ -297,16 +299,16 @@
             // BtnMinSize
             // 
             this.BtnMinSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnMinSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.BtnMinSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(58)))), ((int)(((byte)(183)))));
             this.BtnMinSize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMinSize.FlatAppearance.BorderSize = 0;
             this.BtnMinSize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnMinSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMinSize.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BtnMinSize.ForeColor = System.Drawing.Color.Transparent;
             this.BtnMinSize.IconChar = FontAwesome.Sharp.IconChar.None;
             this.BtnMinSize.IconColor = System.Drawing.Color.Black;
             this.BtnMinSize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnMinSize.Location = new System.Drawing.Point(997, 0);
+            this.BtnMinSize.Location = new System.Drawing.Point(994, 2);
             this.BtnMinSize.Margin = new System.Windows.Forms.Padding(4);
             this.BtnMinSize.Name = "BtnMinSize";
             this.BtnMinSize.Size = new System.Drawing.Size(53, 31);
@@ -323,7 +325,7 @@
             // 
             // PanelShaDow
             // 
-            this.PanelShaDow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(165)))), ((int)(((byte)(174)))));
+            this.PanelShaDow.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.PanelShaDow.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelShaDow.Location = new System.Drawing.Point(360, 86);
             this.PanelShaDow.Margin = new System.Windows.Forms.Padding(4);
@@ -333,7 +335,7 @@
             // 
             // panelDeskTop
             // 
-            this.panelDeskTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(80)))), ((int)(((byte)(104)))));
+            this.panelDeskTop.BackColor = System.Drawing.Color.Transparent;
             this.panelDeskTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDeskTop.Location = new System.Drawing.Point(360, 98);
             this.panelDeskTop.Margin = new System.Windows.Forms.Padding(4);

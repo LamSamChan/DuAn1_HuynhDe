@@ -53,6 +53,9 @@ namespace DuAn1_HuynhDe
         private Form ChildFormCurrent;
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Load logo;
+            Image image = Image.FromFile(@"D:\Fpoly\Img_logoHuynhde\Logo.png");
+            bt_Home.Image = image;
             //Load form maxsize
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
@@ -65,7 +68,7 @@ namespace DuAn1_HuynhDe
         //Methods
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(205, 205, 193);
+            public static Color color1 = Color.FromArgb(237,171,236);
             //public static Color color2 = Color.FromArgb(39, 80, 104);
             //public static Color color3 = Color.FromArgb(39, 80, 104);
             //public static Color color4 = Color.FromArgb(39, 80, 104);
@@ -78,7 +81,7 @@ namespace DuAn1_HuynhDe
             if (btnsender != null)
             {
                 currentBtn = (IconButton)btnsender;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(254, 244, 245);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -104,7 +107,7 @@ namespace DuAn1_HuynhDe
             if (currentBtn != null)
             {
 
-                currentBtn.BackColor = Color.FromArgb(1, 59, 70);
+                currentBtn.BackColor = Color.FromArgb(138, 98, 236);
                 currentBtn.ForeColor = Color.Gainsboro;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
                 currentBtn.IconColor = Color.Gainsboro;
@@ -221,5 +224,7 @@ namespace DuAn1_HuynhDe
                 }
             }
         }
+
+       
     }
 }
