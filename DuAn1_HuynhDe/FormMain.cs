@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using DuAn1_HuynhDe.Class_Gradient;
+using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,9 +18,15 @@ namespace DuAn1_HuynhDe
 {
     public partial class FormMain : Form
     {
+        private IconButton currentBtn;
+        private Panel leftBorderBtn;
+        private Form ChildFormCurrent;
         public FormMain()
         {
             InitializeComponent();
+            leftBorderBtn= new Panel();
+            leftBorderBtn.Size = new Size(10,70);
+            panelMenu.Controls.Add(leftBorderBtn);
             //resize window
             //this.SetStyle(ControlStyles.ResizeRedraw,true);
         }
@@ -48,24 +55,31 @@ namespace DuAn1_HuynhDe
             base.WndProc(ref m); 
         }*/
 
-        private IconButton currentBtn;
-        private Panel leftBorderBtn;
-        private Form ChildFormCurrent;
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Load form maxsize
+
+           // Load form maxsize
+            ReversHome.Image = Image.FromFile("../../Img/Logo.png");
             this.TopMost = true;
             this.FormBorderStyle = FormBorderStyle.None;
             this.WindowState = FormWindowState.Maximized;
 
-            leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(7, 60);
-            PanelMainLogo.Controls.Add(leftBorderBtn);
+            
         }
+
+        private void gradientLinearColor3_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("in");
+
+        }
+
+
         //Methods
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(205, 205, 193);
+            public static Color color1 = Color.FromArgb(166, 91, 153);
+
             //public static Color color2 = Color.FromArgb(39, 80, 104);
             //public static Color color3 = Color.FromArgb(39, 80, 104);
             //public static Color color4 = Color.FromArgb(39, 80, 104);
@@ -77,8 +91,10 @@ namespace DuAn1_HuynhDe
             DisableBtn();
             if (btnsender != null)
             {
+                DisableBtn();
+                #region
                 currentBtn = (IconButton)btnsender;
-                currentBtn.BackColor = Color.FromArgb(37, 36, 81);
+                currentBtn.BackColor = Color.FromArgb(78, 87, 151);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -92,9 +108,11 @@ namespace DuAn1_HuynhDe
                 leftBorderBtn.BringToFront();
 
                 //Icon HomeForm
-                 IconHomeMain.IconChar = currentBtn.IconChar;
-                 IconHomeMain.IconColor = color;
-                
+                CurrentChildForms.IconChar = currentBtn.IconChar;
+                CurrentChildForms.IconColor = color;
+                #endregion
+
+
 
             }
         }
@@ -104,17 +122,65 @@ namespace DuAn1_HuynhDe
             if (currentBtn != null)
             {
 
-                currentBtn.BackColor = Color.FromArgb(1, 59, 70);
-                currentBtn.ForeColor = Color.Gainsboro;
+                currentBtn.BackColor = Color.FromArgb(64, 0, 64);
+                currentBtn.ForeColor = Color.FromArgb(0, 179, 179);
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.Gainsboro;
+                currentBtn.IconColor = Color.FromArgb(0, 179, 179);
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
 
             }
         }
 
-        //oppem Child form
+        private void IcBt_QuanTri_Click(object sender, EventArgs e)
+        {
+            ActionButton(sender, RGBColors.color1);
+            OppenChildForm(new FormQuanTri());
+        }
+
+        private void IcBt_NhanVien_Click(object sender, EventArgs e)
+        {
+            ActionButton(sender, RGBColors.color1);
+            OppenChildForm(new FormNhanVien()); 
+        }
+
+        private void IcBt_CaiDat_Click(object sender, EventArgs e)
+        {
+            ActionButton(sender, RGBColors.color1);
+            OppenChildForm(new FormCaiDat());
+        }
+
+        private void IcBt_HoTro_Click(object sender, EventArgs e)
+        {
+            ActionButton(sender, RGBColors.color1);
+            OppenChildForm(new FormHoTro());
+        }
+
+
+
+        private void ReversHome_Click(object sender, EventArgs e)
+        {
+            ChildFormCurrent.Close();
+            label1.Text = "Home";
+            ResetForm();
+        }
+
+
+
+
+        private void ResetForm()
+        {
+            DisableBtn();
+            leftBorderBtn.Visible = false;
+            CurrentChildForms.IconChar = IconChar.HomeUser;
+            CurrentChildForms.IconColor = Color.White;
+            label1.Text = "Home";
+        }
+
+
+
+
+        ////oppem Child form
         private void OppenChildForm(Form childForm)
         {
             if (ChildFormCurrent != null)
@@ -126,100 +192,66 @@ namespace DuAn1_HuynhDe
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelDeskTop.Controls.Add(childForm);
-            panelDeskTop.Tag = childForm;
+            FillChildForns.Controls.Add(childForm);
+            FillChildForns.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
             label1.Text = childForm.Text;
         }
 
 
-        private void iconButton1_Click_1(object sender, EventArgs e)
-        {
-            ActionButton(sender, RGBColors.color1);
-            OppenChildForm(new FormQuanTri());
-        }
+        //private void btnExits_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
 
-        private void iconButton2_Click(object sender, EventArgs e)
-        {
-            ActionButton(sender, RGBColors.color1);
-            OppenChildForm(new FormNhanVien());
+        //private void btnMaxSize_Click(object sender, EventArgs e)
+        //{
+        //    if (btnMaxSize.Text.ToString() == "❐")
+        //    {
+        //        this.WindowState = FormWindowState.Normal;
+        //        this.CenterToScreen();
+        //        btnMaxSize.Text = "☐";
+        //    }
+        //    else
+        //    {
+        //        WindowState = FormWindowState.Maximized;
+        //        btnMaxSize.Text = "❐";
+        //    }
+        //}
 
-        }
+        //private void BtnMinSize_Click(object sender, EventArgs e)
+        //{
+        //    this.WindowState=FormWindowState.Minimized;
+        //}
 
-        private void iconButton4_Click(object sender, EventArgs e)
-        {
-            ActionButton(sender, RGBColors.color1);
 
-        }
 
-        private void iconButton5_Click(object sender, EventArgs e)
-        {
-            ActionButton(sender, RGBColors.color1);
+        ////move window
+        //public const int WM_NCLBUTTONDOWN = 0xA1;
+        //public const int HT_CAPTION = 0x2;
 
-        }
+        //[DllImportAttribute("user32.dll")]
+        //public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        //[DllImportAttribute("user32.dll")]
+        //public static extern bool ReleaseCapture();
 
-        private void btnExits_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void panel1_MouseDown(object sender, MouseEventArgs e)
+        //{
+        //    if (e.Button == MouseButtons.Left)
+        //    {
+        //        ReleaseCapture();
+        //        SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
 
-        private void btnMaxSize_Click(object sender, EventArgs e)
-        {
-            if (btnMaxSize.Text.ToString() == "❐")
-            {
-                this.WindowState = FormWindowState.Normal;
-                this.CenterToScreen();
-                btnMaxSize.Text = "☐";
-            }
-            else
-            {
-                WindowState = FormWindowState.Maximized;
-                btnMaxSize.Text = "❐";
-            }
-        }
+        //        if (this.WindowState == FormWindowState.Normal)
+        //        {
+        //            btnMaxSize.Text = "☐";
+        //        }
+        //    }
+        //}
 
-        private void BtnMinSize_Click(object sender, EventArgs e)
-        {
-            this.WindowState=FormWindowState.Minimized;
-        }
 
-        private void bt_Home_Click(object sender, EventArgs e)
-        {
-            ChildFormCurrent.Close();
-            label1.Text = "Home";
-            ResetForm();
-        }
-        // resert click tren form
-        private void ResetForm()
-        {
-            DisableBtn();
-            leftBorderBtn.Visible = false;
-            IconHomeMain.IconChar = IconChar.HomeUser;
-            IconHomeMain.IconColor = Color.PowderBlue;
-        }
 
-        //move window
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
 
-        [DllImportAttribute("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        [DllImportAttribute("user32.dll")]
-        public static extern bool ReleaseCapture();
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-
-                if (this.WindowState == FormWindowState.Normal)
-                {
-                    btnMaxSize.Text = "☐";
-                }
-            }
-        }
     }
 }

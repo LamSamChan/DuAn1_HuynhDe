@@ -53,6 +53,24 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_Gradient\ButtonLinearGradient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class_Gradient\ButtonLinearGradient.Designer.cs">
+      <DependentUpon>ButtonLinearGradient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCaiDat.Designer.cs">
+      <DependentUpon>FormCaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHoTro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHoTro.Designer.cs">
+      <DependentUpon>FormHoTro.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,8 +89,14 @@
     <Compile Include="FormQuanTri.Designer.cs">
       <DependentUpon>FormQuanTri.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class_Gradient\PanelLinearGradient.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Class_Gradient\ButtonLinearGradient.resx">
+      <DependentUpon>ButtonLinearGradient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +142,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
