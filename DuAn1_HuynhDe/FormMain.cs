@@ -78,7 +78,7 @@ namespace DuAn1_HuynhDe
         //Methods
         private struct RGBColors
         {
-            public static Color color1 = Color.FromArgb(166, 91, 153);
+            public static Color color1 = Color.FromArgb(225,225,225);
 
             //public static Color color2 = Color.FromArgb(39, 80, 104);
             //public static Color color3 = Color.FromArgb(39, 80, 104);
@@ -94,7 +94,7 @@ namespace DuAn1_HuynhDe
                 DisableBtn();
                 #region
                 currentBtn = (IconButton)btnsender;
-                currentBtn.BackColor = Color.FromArgb(78, 87, 151);
+                currentBtn.BackColor = Color.FromArgb(77, 77, 255);
                 currentBtn.ForeColor = color;
                 currentBtn.TextAlign = ContentAlignment.MiddleCenter;
                 currentBtn.IconColor = color;
@@ -122,10 +122,10 @@ namespace DuAn1_HuynhDe
             if (currentBtn != null)
             {
 
-                currentBtn.BackColor = Color.FromArgb(64, 0, 64);
-                currentBtn.ForeColor = Color.FromArgb(0, 179, 179);
+                currentBtn.BackColor = Color.FromArgb(151, 150, 240);
+                currentBtn.ForeColor = Color.White;
                 currentBtn.TextAlign = ContentAlignment.MiddleLeft;
-                currentBtn.IconColor = Color.FromArgb(0, 179, 179);
+                currentBtn.IconColor = Color.White;
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
 

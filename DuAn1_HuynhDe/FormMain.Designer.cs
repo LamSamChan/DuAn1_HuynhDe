@@ -52,6 +52,7 @@
             // 
             // FillChildForns
             // 
+            this.FillChildForns.BackColor = System.Drawing.Color.White;
             this.FillChildForns.ColorBottom = System.Drawing.Color.Empty;
             this.FillChildForns.Colorleft = System.Drawing.Color.Empty;
             this.FillChildForns.ColorRight = System.Drawing.Color.Empty;
@@ -59,14 +60,14 @@
             this.FillChildForns.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FillChildForns.Location = new System.Drawing.Point(240, 130);
             this.FillChildForns.Name = "FillChildForns";
-            this.FillChildForns.Size = new System.Drawing.Size(1250, 596);
+            this.FillChildForns.Size = new System.Drawing.Size(1250, 609);
             this.FillChildForns.TabIndex = 3;
             // 
             // panelLinearGradient1
             // 
             this.panelLinearGradient1.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLinearGradient1.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLinearGradient1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(137)))), ((int)(((byte)(162)))));
+            this.panelLinearGradient1.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLinearGradient1.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(199)))), ((int)(((byte)(212)))));
             this.panelLinearGradient1.ColorTop = System.Drawing.Color.Empty;
             this.panelLinearGradient1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLinearGradient1.Location = new System.Drawing.Point(240, 120);
@@ -78,8 +79,8 @@
             // 
             this.panelLinearGradient2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(135)))), ((int)(((byte)(147)))));
             this.panelLinearGradient2.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLinearGradient2.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLinearGradient2.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(135)))), ((int)(((byte)(147)))));
+            this.panelLinearGradient2.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLinearGradient2.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(199)))), ((int)(((byte)(212)))));
             this.panelLinearGradient2.ColorTop = System.Drawing.Color.Empty;
             this.panelLinearGradient2.Controls.Add(this.label1);
             this.panelLinearGradient2.Controls.Add(this.CurrentChildForms);
@@ -92,7 +93,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.label1.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(39, 90);
             this.label1.Name = "label1";
@@ -102,7 +103,7 @@
             // 
             // CurrentChildForms
             // 
-            this.CurrentChildForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.CurrentChildForms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.CurrentChildForms.IconChar = FontAwesome.Sharp.IconChar.HomeUser;
             this.CurrentChildForms.IconColor = System.Drawing.Color.White;
             this.CurrentChildForms.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -116,8 +117,8 @@
             // panelMenu
             // 
             this.panelMenu.ColorBottom = System.Drawing.Color.Empty;
-            this.panelMenu.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelMenu.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
+            this.panelMenu.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelMenu.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.panelMenu.ColorTop = System.Drawing.Color.Empty;
             this.panelMenu.Controls.Add(this.IcBt_HoTro);
             this.panelMenu.Controls.Add(this.panelLinearGradient5);
@@ -130,19 +131,19 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(240, 726);
+            this.panelMenu.Size = new System.Drawing.Size(240, 739);
             this.panelMenu.TabIndex = 0;
             // 
             // IcBt_HoTro
             // 
-            this.IcBt_HoTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.IcBt_HoTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.IcBt_HoTro.Dock = System.Windows.Forms.DockStyle.Top;
             this.IcBt_HoTro.FlatAppearance.BorderSize = 0;
             this.IcBt_HoTro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IcBt_HoTro.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IcBt_HoTro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_HoTro.ForeColor = System.Drawing.Color.White;
             this.IcBt_HoTro.IconChar = FontAwesome.Sharp.IconChar.Headset;
-            this.IcBt_HoTro.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_HoTro.IconColor = System.Drawing.Color.White;
             this.IcBt_HoTro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IcBt_HoTro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IcBt_HoTro.Location = new System.Drawing.Point(0, 660);
@@ -159,8 +160,8 @@
             // panelLinearGradient5
             // 
             this.panelLinearGradient5.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLinearGradient5.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLinearGradient5.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
+            this.panelLinearGradient5.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLinearGradient5.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.panelLinearGradient5.ColorTop = System.Drawing.Color.Empty;
             this.panelLinearGradient5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLinearGradient5.Location = new System.Drawing.Point(0, 590);
@@ -170,14 +171,14 @@
             // 
             // IcBt_CaiDat
             // 
-            this.IcBt_CaiDat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.IcBt_CaiDat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.IcBt_CaiDat.Dock = System.Windows.Forms.DockStyle.Top;
             this.IcBt_CaiDat.FlatAppearance.BorderSize = 0;
             this.IcBt_CaiDat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IcBt_CaiDat.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IcBt_CaiDat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_CaiDat.ForeColor = System.Drawing.Color.White;
             this.IcBt_CaiDat.IconChar = FontAwesome.Sharp.IconChar.Wrench;
-            this.IcBt_CaiDat.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_CaiDat.IconColor = System.Drawing.Color.White;
             this.IcBt_CaiDat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IcBt_CaiDat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IcBt_CaiDat.Location = new System.Drawing.Point(0, 520);
@@ -194,8 +195,8 @@
             // panelLinearGradient4
             // 
             this.panelLinearGradient4.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLinearGradient4.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLinearGradient4.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
+            this.panelLinearGradient4.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLinearGradient4.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.panelLinearGradient4.ColorTop = System.Drawing.Color.Empty;
             this.panelLinearGradient4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLinearGradient4.Location = new System.Drawing.Point(0, 450);
@@ -205,14 +206,14 @@
             // 
             // IcBt_NhanVien
             // 
-            this.IcBt_NhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.IcBt_NhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.IcBt_NhanVien.Dock = System.Windows.Forms.DockStyle.Top;
             this.IcBt_NhanVien.FlatAppearance.BorderSize = 0;
             this.IcBt_NhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IcBt_NhanVien.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IcBt_NhanVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_NhanVien.ForeColor = System.Drawing.Color.White;
             this.IcBt_NhanVien.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.IcBt_NhanVien.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_NhanVien.IconColor = System.Drawing.Color.White;
             this.IcBt_NhanVien.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IcBt_NhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IcBt_NhanVien.Location = new System.Drawing.Point(0, 380);
@@ -229,8 +230,8 @@
             // panelLinearGradient3
             // 
             this.panelLinearGradient3.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLinearGradient3.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLinearGradient3.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
+            this.panelLinearGradient3.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLinearGradient3.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.panelLinearGradient3.ColorTop = System.Drawing.Color.Empty;
             this.panelLinearGradient3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLinearGradient3.Location = new System.Drawing.Point(0, 310);
@@ -240,14 +241,14 @@
             // 
             // IcBt_QuanTri
             // 
-            this.IcBt_QuanTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.IcBt_QuanTri.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.IcBt_QuanTri.Dock = System.Windows.Forms.DockStyle.Top;
             this.IcBt_QuanTri.FlatAppearance.BorderSize = 0;
             this.IcBt_QuanTri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.IcBt_QuanTri.Font = new System.Drawing.Font("Colonna MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IcBt_QuanTri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_QuanTri.ForeColor = System.Drawing.Color.White;
             this.IcBt_QuanTri.IconChar = FontAwesome.Sharp.IconChar.UserLock;
-            this.IcBt_QuanTri.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(179)))), ((int)(((byte)(179)))));
+            this.IcBt_QuanTri.IconColor = System.Drawing.Color.White;
             this.IcBt_QuanTri.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.IcBt_QuanTri.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.IcBt_QuanTri.Location = new System.Drawing.Point(0, 240);
@@ -264,8 +265,8 @@
             // panelLogo
             // 
             this.panelLogo.ColorBottom = System.Drawing.Color.Empty;
-            this.panelLogo.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.panelLogo.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.panelLogo.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
+            this.panelLogo.ColorRight = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.panelLogo.ColorTop = System.Drawing.Color.Empty;
             this.panelLogo.Controls.Add(this.ReversHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
@@ -276,7 +277,7 @@
             // 
             // ReversHome
             // 
-            this.ReversHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
+            this.ReversHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(150)))), ((int)(((byte)(240)))));
             this.ReversHome.Location = new System.Drawing.Point(26, 34);
             this.ReversHome.Name = "ReversHome";
             this.ReversHome.Size = new System.Drawing.Size(189, 152);
@@ -288,7 +289,7 @@
             // FormMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1490, 726);
+            this.ClientSize = new System.Drawing.Size(1490, 739);
             this.Controls.Add(this.FillChildForns);
             this.Controls.Add(this.panelLinearGradient1);
             this.Controls.Add(this.panelLinearGradient2);
